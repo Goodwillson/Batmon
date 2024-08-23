@@ -17,6 +17,14 @@ struct BM6Data {
 
 BM6Data bm6_data = {0, 0, 0};
 
+struct Config {  
+  std::vector<String> devices;
+};
+
+Config config = {
+    {"50:54:7B:5E:89:A9"}  // Initialize vector with a list of device MAC addresses
+};
+
 // Precomputed encrypted command
 uint8_t encryptedCommandBytes[16];
 
